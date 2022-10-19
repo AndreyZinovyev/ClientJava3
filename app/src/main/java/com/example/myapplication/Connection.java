@@ -1,6 +1,10 @@
+package com.example.myapplication;
 import android.util.Log;
 
+import java.io.BufferedReader;
+import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class Connection {
@@ -78,7 +82,19 @@ public class Connection {
      }
 
      public void Insert(){
+         DataInputStream in;
+         BufferedReader reader;
 
+         try
+         {
+             in = new DataInputStream(mSocket.getInputStream());
+
+
+         }
+         catch (IOException e)    /* ... */
+         {
+             e.printStackTrace();
+         }
      }
 
      public void Delete(){
