@@ -16,44 +16,32 @@
     tools:context=".MainActivity">
 
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Resours"
+        android:layout_width="409dp"
+        android:layout_height="402dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
     <Button
         android:id="@+id/TestButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:onClickListener="@{handler::onClick}"
         android:text="Add"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:layout_editor_absoluteX="102dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="328dp"
-        android:text="@{cars.Number}"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="315dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@{cars.TimeStart}"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="334dp" />
+        tools:layout_editor_absoluteX="162dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="146dp"
+        android:layout_marginTop="420dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="82dp" />
+        tools:layout_editor_absoluteX="101dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -67,29 +55,30 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="82dp" />
+        tools:layout_editor_absoluteX="101dp" />
 
     <Button
         android:id="@+id/button"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:onClickListener="@{handler::onClickInsert}"
-        android:text="Insert"
+        android:text="TEST DN Click"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="114dp" />
+        tools:layout_editor_absoluteX="132dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:onClickListener="@{handler::onClickDelete}"
-        android:text="Delete"
+        android:text="Insert"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="114dp" />
+        tools:layout_editor_absoluteX="161dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
     </layout>

@@ -64,7 +64,7 @@ public class MyHandler {
         }
        String a;
         String b;
-        __binding.textView2.setText("Ура");
+  //      __binding.textView2.setText("Ура");
     a= __binding.editTextTextPersonName.getText().toString();
 
         b=  __binding.editTextTextPersonName2.getText().toString();
