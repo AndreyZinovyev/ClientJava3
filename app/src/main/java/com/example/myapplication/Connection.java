@@ -4,6 +4,7 @@ import android.util.Log;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
@@ -55,6 +56,21 @@ public class Connection {
     /**
      * Метод отправки данных
      */
+    public String getData2() {
+        try {
+            InputStream is = mSocket.getInputStream();
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader br = new BufferedReader(isr);
+            String hello = br.readLine();
+
+            is.close();
+            isr.close();
+            br.close();
+
+            return hello;
+        }
+        catch (IOException e){return "Catch";}
+    }
     public void sendData(byte[] data) throws Exception {
         // Проверка открытия сокета
         if (mSocket == null || mSocket.isClosed()) {
